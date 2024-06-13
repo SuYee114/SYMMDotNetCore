@@ -25,10 +25,6 @@ namespace SYMMDotNetCore.ConsoleApp
         {
  
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
-            // Server connection through stringBuilder obj indirectly (need to install Nuget Package to use SqlConnection
-            //The direct way :
-            //SqlConnection connection = new SqlConnection(DataSource = "LAPTOP-5TMQTJGN;InitialCatalog = "SYMMDotNetCore;UserID = "sa";Password = "su$2003");
-
             connection.Open();
             Console.WriteLine("The Connection is successfully opened");
 
